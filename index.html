@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <!-- FrameWork Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app">
+        <ul>
+            <!-- Itera sulle attività nell'array indirizziEmail -->
+            <li class="email" v-for="(email, index) in indirizziEmail" :key="index">
+            <span> {{ email }}</span>
+
+                
+            </li>
+        </ul>
+    </div>
+        
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>
