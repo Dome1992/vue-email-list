@@ -1,0 +1,50 @@
+/* Stile generale della pagina */
+body {
+    font-family: 'Roboto', sans-serif; /* Utilizzo di un font più moderno */
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenitore principale */
+#app {
+    background-color: #fff;
+    border-radius: 10px; /* Aumento del raggio del bordo per uno stile più arrotondato */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 80%; /* Limita la larghezza per una migliore leggibilità */
+    max-width: 600px; /* Limita la larghezza massima per una migliore leggibilità su schermi più grandi */
+}
+
+/* Lista degli indirizzi email */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Singolo elemento della lista */
+.email {
+    margin-bottom: 20px; /* Aumento del margine inferiore per uno spazio più aperto */
+    padding: 15px;
+    border: 2px solid #3498db; /* Cambio del colore del bordo per uno stile più vivace */
+    border-radius: 8px;
+    background-color: #ecf0f1; /* Colore di sfondo più morbido */
+    transition: background-color 0.3s ease; /* Effetto di transizione sul cambio di colore di sfondo */
+    cursor: pointer; /* Indica che l'elemento è interattivo */
+
+    /* Stile del testo dell'email */
+    span {
+        color: #2c3e50; /* Colore del testo più scuro per una migliore leggibilità */
+        font-weight: bold;
+    }
+}
+
+/* Stile hover per un feedback interattivo */
+.email:hover {
+    background-color: #3498db; /* Cambio del colore di sfondo al passaggio del mouse */
+    color: #fff; /* Cambio del colore del testo al passaggio del mouse */
+}
+

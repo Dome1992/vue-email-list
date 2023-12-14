@@ -13,15 +13,15 @@ createApp({
     mounted() {
         console.log("L'applicazione è caricata");
 
-        axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+       /* axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then((response) => {
                 // Pusha indirizzo email
                 this.indirizziEmail.push(response.data.response);
                 console.log(this.indirizziEmail);
-            });
+            });*/
             
-            // ciclo for in js per ciclare 9 email all interno dell api di riferimento
-        for (let index = 0; index < 9; index++) {
+            // ciclo for in js per ciclare 10 email all interno dell api di riferimento
+        for (let index = 0; index < 10; index++) {
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
                 .then((response) => {
                     
